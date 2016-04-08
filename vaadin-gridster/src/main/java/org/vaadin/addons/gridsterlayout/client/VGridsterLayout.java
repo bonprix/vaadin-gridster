@@ -1,6 +1,7 @@
 package org.vaadin.addons.gridsterlayout.client;
 
 import com.google.gwt.core.client.JavaScriptObject;
+import com.google.gwt.dom.client.Document;
 import com.google.gwt.dom.client.Element;
 import com.google.gwt.dom.client.Style;
 import com.google.gwt.dom.client.Style.BorderStyle;
@@ -81,7 +82,7 @@ public class VGridsterLayout extends ComplexPanel {
 
 		addNativeWidget(gridsterId, id, position.getCol(), position.getRow(), position.getSizeX(), position.getSizeY());
 
-		add(widget, DOM.getElementById(id));
+		add(widget, Document.get().getElementById(id));
 	}
 
 	@Override
