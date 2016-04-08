@@ -23,7 +23,6 @@ public class GridsterWidgetPosition implements Cloneable {
 		this.sizeY = sizeY;
 	}
 
-	@Override
 	public GridsterWidgetPosition clone() {
 		return new GridsterWidgetPosition(this);
 	}

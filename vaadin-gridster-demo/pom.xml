@@ -86,8 +86,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.vaadin.addons</groupId>
-			<artifactId>GridsterLayout</artifactId>
-			<version>${version}</version>
+			<artifactId>vaadin-gridster</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.vaadin</groupId>
