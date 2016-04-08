@@ -10,6 +10,7 @@ import com.vaadin.util.ReflectTools;
 
 public interface ComponentResizeListener {
 
+	@SuppressWarnings("serial")
 	public static class ComponentResizeEvent extends Event {
 
 		private final Component target;

@@ -11,6 +11,7 @@ import com.vaadin.util.ReflectTools;
 
 public interface StateChangeListener {
 
+	@SuppressWarnings("serial")
 	public static class StateChangeEvent extends Event {
 
 		private Map<Component, GridsterWidgetPosition> position;

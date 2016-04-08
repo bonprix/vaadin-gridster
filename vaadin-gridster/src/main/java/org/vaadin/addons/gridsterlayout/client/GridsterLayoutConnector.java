@@ -20,6 +20,7 @@ import com.vaadin.client.ui.customlayout.CustomLayoutConnector;
 import com.vaadin.shared.Connector;
 import com.vaadin.shared.ui.Connect;
 
+@SuppressWarnings("serial")
 @Connect(GridsterLayout.class)
 @JavaScript({ "jquery-1.11.3.min.js", "gridster.js" })
 public class GridsterLayoutConnector extends AbstractLayoutConnector implements GridsterListener {
@@ -61,6 +62,7 @@ public class GridsterLayoutConnector extends AbstractLayoutConnector implements 
 		getWidget().updateCaption(paintable);
 	}
 
+	@SuppressWarnings("unused")
 	private static Logger getLogger() {
 		return Logger.getLogger(CustomLayoutConnector.class.getName());
 	}
