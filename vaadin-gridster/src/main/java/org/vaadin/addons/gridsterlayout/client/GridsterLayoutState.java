@@ -6,6 +6,7 @@ import java.util.Map;
 import com.vaadin.shared.Connector;
 import com.vaadin.shared.ui.AbstractLayoutState;
 
+@SuppressWarnings("serial")
 public class GridsterLayoutState extends AbstractLayoutState {
 	{
 		primaryStyleName = "v-gridsterlayout";
