@@ -133,7 +133,6 @@ public class GridsterLayout extends AbstractLayout {
 	 *
 	 * NOTE: this method is not currently implemented
 	 * 
-	 * @param c - the component whose position is to be updated.
 	 * @param position - the position to move the component 'c' to.
 	 */
 	public void setComponentPosition(final Component c, final GridsterWidgetPosition position) {
