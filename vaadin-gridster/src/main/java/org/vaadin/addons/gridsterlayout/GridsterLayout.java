@@ -20,6 +20,7 @@ import com.vaadin.shared.Connector;
 import com.vaadin.ui.AbstractLayout;
 import com.vaadin.ui.Component;
 
+@SuppressWarnings("serial")
 @StyleSheet("vaadin://gridster/jquery.gridster.css")
 @JavaScript({ "vaadin://gridster/jquery-1.11.3.min.js", "vaadin://gridster/jquery.collision.js", "vaadin://gridster/jquery.coords.js",
 	"vaadin://gridster/jquery.draggable.js", "vaadin://gridster/jquery.gridster.with-extras.js", "vaadin://gridster/utils.js" })
@@ -165,6 +166,11 @@ public class GridsterLayout extends AbstractLayout {
 
 			if (widget == null) {
 				System.out.println("ERROR: no widget with ID " + id + " found in internal state");
+				continue;
+			}
+
+			if (position == null) {
+				System.out.println("ERROR: null position for widget with ID " + id + " found in internal state");
 				continue;
 			}
 
