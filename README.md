@@ -23,3 +23,7 @@ Running the demo:
 To run the demo run:
 
 mvn jetty:run
+
+Once running navigate to:
+
+http://localhost:8080
